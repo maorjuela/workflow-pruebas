@@ -34,13 +34,13 @@ jobs:
       run: |
           coverage run -m unittest tests/test_persona.py
           coverage report -m
-  automerge: 
-    name: Automerge
-    needs: job1
-    runs-on: ubuntu-latest
-    steps:
-      - name: automerge
-        uses: "pascalgn/automerge-action@v0.15.3"
-        env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          MERGE_LABELS: ""
+  # automerge: 
+  #   name: Automerge
+  #   needs: job1
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: automerge
+  #       uses: "pascalgn/automerge-action@v0.15.3"
+  #       env:
+  #         GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+  #         MERGE_LABELS: ""
